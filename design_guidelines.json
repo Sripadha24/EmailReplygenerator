@@ -1,0 +1,119 @@
+{
+  "identity": {
+    "persona": "E1 - The Anti-AI Designer",
+    "mission": "Create a frictionless, 'Soft Utility' experience that feels professional yet distinct.",
+    "principles": [
+      "Fusion over Imitation: Mix utility with 'Control Room' aesthetics.",
+      "Emotion First: Confidence and Efficiency.",
+      "Content is King: The email content is the hero.",
+      "Negative Space: Generous padding to reduce cognitive load.",
+      "Contrast: High contrast for readability in dark mode."
+    ]
+  },
+  "typography": {
+    "fonts": {
+      "heading": {
+        "family": "Outfit",
+        "weights": ["500", "700"],
+        "usage": "Main titles, section headers. Use tight tracking (-0.02em)."
+      },
+      "body": {
+        "family": "Inter",
+        "weights": ["400", "500"],
+        "usage": "Input text, generated replies, labels."
+      }
+    },
+    "rules": [
+      "Headings must NOT use Inter.",
+      "Use 'text-balance' for headlines.",
+      "Input text should be at least 16px to prevent zooming on mobile."
+    ]
+  },
+  "colors": {
+    "theme": "dark",
+    "palette": {
+      "background": "#09090b",
+      "surface": "#18181b",
+      "surface_highlight": "#27272a",
+      "border": "#27272a",
+      "text_primary": "#fafafa",
+      "text_secondary": "#a1a1aa",
+      "accent_primary": "#3b82f6",
+      "accent_glow": "rgba(59, 130, 246, 0.5)",
+      "success": "#10b981",
+      "error": "#ef4444"
+    },
+    "usage": {
+      "body_bg": "bg-[#09090b]",
+      "card_bg": "bg-[#18181b]",
+      "primary_button": "bg-[#3b82f6] hover:bg-[#2563eb] text-white shadow-[0_0_15px_rgba(59,130,246,0.3)]",
+      "secondary_button": "bg-[#27272a] hover:bg-[#3f3f46] text-white",
+      "input_bg": "bg-transparent border-[#27272a] focus:border-[#3b82f6] focus:ring-1 focus:ring-[#3b82f6]"
+    }
+  },
+  "layout": {
+    "structure": "Single Column Focus (The 'Monolith')",
+    "container": "max-w-2xl mx-auto min-h-screen flex flex-col justify-center p-6 md:p-12",
+    "spacing": {
+      "section_gap": "gap-8",
+      "element_gap": "gap-4",
+      "internal_padding": "p-6"
+    },
+    "grid_strategy": "Flexbox column for mobile, simple grid for larger screens if needed (e.g., side-by-side tone selector and button)."
+  },
+  "components": {
+    "textarea": {
+      "style": "min-h-[200px] resize-none bg-[#18181b]/50 backdrop-blur-sm border border-[#27272a] rounded-xl p-4 text-base focus:outline-none focus:border-[#3b82f6] transition-all duration-300",
+      "placeholder": "Paste the email you received or describe the situation..."
+    },
+    "dropdown": {
+      "component": "Shadcn Select",
+      "style": "h-12 bg-[#18181b] border-[#27272a] rounded-lg"
+    },
+    "button": {
+      "primary": "h-12 rounded-lg font-medium transition-all active:scale-95",
+      "copy": "absolute top-4 right-4 p-2 rounded-md hover:bg-[#27272a] transition-colors"
+    },
+    "card": {
+      "style": "relative overflow-hidden rounded-2xl border border-[#27272a] bg-[#18181b]/80 backdrop-blur-md shadow-2xl"
+    }
+  },
+  "visual_enhancers": {
+    "background_texture": {
+      "url": "https://images.unsplash.com/photo-1641405102586-16de9aed9236?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Nzd8MHwxfHNlYXJjaHwzfHxhYnN0cmFjdCUyMGRhcmslMjBncmFkaWVudCUyMG1lc2glMjB0ZXh0dXJlJTIwbWluaW1hbHxlbnwwfHx8YmxhY2t8MTc2NjY0MjU1Mnww&ixlib=rb-4.1.0&q=85",
+      "usage": "Fixed background with low opacity (opacity-20) and mix-blend-overlay to add subtle depth to the solid dark background."
+    },
+    "glassmorphism": "Use backdrop-blur-xl for the main container or cards to separate them from the background.",
+    "glow_effects": "Use subtle colored shadows (shadow-indigo-500/20) on the main action button."
+  },
+  "motion": {
+    "transitions": "transition-all duration-300 ease-out",
+    "hover": "hover:-translate-y-0.5",
+    "loading": "Use a skeleton loader or a subtle pulse animation for the generated text area."
+  },
+  "accessibility": {
+    "contrast": "Ensure all text meets APCA standards. Use text-zinc-400 for placeholders, text-zinc-100 for input.",
+    "focus": "Visible focus rings are mandatory for keyboard navigation.",
+    "labels": "All inputs must have visible or aria-labels."
+  },
+  "instructions_to_main_agent": [
+    "1. Install dependencies: `npm install lucide-react` (or yarn add).",
+    "2. Setup Tailwind: Ensure `darkMode: 'class'` is active.",
+    "3. Create the layout: Use the 'Monolith' structure.",
+    "4. Implement the 'Liquified' background image as a fixed, low-opacity layer.",
+    "5. Build the Input Section: Textarea + Tone Selector.",
+    "6. Build the Output Section: Only visible after generation (or use a placeholder state).",
+    "7. Add 'Copy to Clipboard' functionality with a toast notification (use Sonner).",
+    "8. Connect to the backend API (mock it if necessary for UI dev).",
+    "9. Apply the 'Electric Blue' accent sparingly - only for the primary action."
+  ],
+  "UNIVERSAL_GUIDELINES_FOR_MAIN_AGENT": [
+    "Do not use generic centered layouts.",
+    "Create depth through layered design elements.",
+    "Use glass-morphism effects.",
+    "Every interaction needs micro-animations.",
+    "Use 2-3x more spacing than feels comfortable.",
+    "Subtle grain textures or noise overlays are encouraged.",
+    "NEVER use AI assistant Emoji characters."
+  ]
+}

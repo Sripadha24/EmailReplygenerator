@@ -1,0 +1,58 @@
+{
+  "summary": {
+    "total_tests": 8,
+    "passed_tests": 7,
+    "success_rate": "87.5%",
+    "timestamp": "2025-12-25T06:07:45.066030"
+  },
+  "test_results": [
+    {
+      "test": "API Root Endpoint",
+      "success": true,
+      "details": "Status: 200, Response: {\"message\":\"Email Reply Generator API\"}",
+      "timestamp": "2025-12-25T06:07:34.679747"
+    },
+    {
+      "test": "Generate Reply - Valid Input",
+      "success": true,
+      "details": "Status: 200, Reply length: 283",
+      "timestamp": "2025-12-25T06:07:37.358051"
+    },
+    {
+      "test": "Generate Reply - Empty Input Validation",
+      "success": true,
+      "details": "Status: 400, Response: {\"detail\":\"Email situation cannot be empty\"}",
+      "timestamp": "2025-12-25T06:07:37.392409"
+    },
+    {
+      "test": "Generate Reply - Formal Tone",
+      "success": true,
+      "details": "Tone: formal, Status: 200",
+      "timestamp": "2025-12-25T06:07:40.032731"
+    },
+    {
+      "test": "Generate Reply - Semi-Formal Tone",
+      "success": true,
+      "details": "Tone: semi-formal, Status: 200",
+      "timestamp": "2025-12-25T06:07:42.848083"
+    },
+    {
+      "test": "Generate Reply - Friendly Tone",
+      "success": true,
+      "details": "Tone: friendly, Status: 200",
+      "timestamp": "2025-12-25T06:07:44.007263"
+    },
+    {
+      "test": "Generate Reply - Invalid Tone Handling",
+      "success": true,
+      "details": "Status: 200",
+      "timestamp": "2025-12-25T06:07:45.031337"
+    },
+    {
+      "test": "CORS Headers",
+      "success": false,
+      "details": "Status: 405, CORS headers present: False",
+      "timestamp": "2025-12-25T06:07:45.065143"
+    }
+  ]
+}
